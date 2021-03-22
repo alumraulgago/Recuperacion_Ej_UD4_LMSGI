@@ -1,0 +1,5 @@
+<!ELEMENT Libros (libro*)>
+<!ELEMENT libro (autor, fecha, nombre)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>

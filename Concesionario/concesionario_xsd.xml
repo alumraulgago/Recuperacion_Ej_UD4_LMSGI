@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<Concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="concesionario.xsd">
+    <Coche>
+        <Marca>
+            <modelo>Audi A3</modelo>
+            <matricula>6548FBJ</matricula>
+        </Marca>
+        <potencia>200</potencia>
+        <plazas>4</plazas>
+        <numeroPuertas>4</numeroPuertas>
+    </Coche>
+    <Coche>
+        <Marca>
+            <modelo>Lamborgini Murcielago</modelo>
+            <matricula>8754BRK</matricula>
+        </Marca>
+        <potencia>220</potencia>
+        <plazas>2</plazas>
+        <numeroPuertas>2</numeroPuertas>
+    </Coche>
+    <Coche>
+        <Marca>
+            <modelo>Camaro</modelo>
+            <matricula>6485BIJ</matricula>
+        </Marca>
+        <potencia>170</potencia>
+        <plazas>2</plazas>
+        <numeroPuertas>2</numeroPuertas>
+    </Coche>
+    <Coche>
+        <Marca>
+            <modelo>Ferrari f40</modelo>
+            <matricula>4899RJR</matricula>
+        </Marca>
+        <potencia>240</potencia>
+        <plazas>2</plazas>
+        <numeroPuertas>2</numeroPuertas>
+    </Coche>
+</Concesionario>

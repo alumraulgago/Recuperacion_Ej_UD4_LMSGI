@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ediciones_aranda [
+    <!ELEMENT ediciones_aranda (cabecera, tabla)>
+    <!ELEMENT cabecera (titulo, subtitulo, descripcion, fecha)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT subtitulo (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT tabla (regiones+, trimestre, librosVendidos)>
+    <!ELEMENT regiones (norte | centro | sur)>
+    <!ELEMENT norte (#PCDATA| trim| libro)*>
+    <!ELEMENT centro (#PCDATA|trim| libro)*>
+    <!ELEMENT sur (#PCDATA|trim| libro)*>
+    <!ELEMENT trim (#PCDATA)>
+    <!ELEMENT libro (#PCDATA)>
+    <!ELEMENT trimestre (#PCDATA)>
+    <!ELEMENT librosVendidos (#PCDATA)>
+]>
+<ediciones_aranda>
+  <cabecera>
+    <titulo>Ediciones Aranda</titulo>
+    <subtitulo>Informe regional del ventas</subtitulo>
+    <descripcion>informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+    <fecha>30/12/2009</fecha>
+  </cabecera>
+  <tabla>
+    <regiones>
+      <norte>Norte
+        <trim>1</trim>
+          <libro>24000</libro>
+        <trim>2</trim>
+          <libro>38600</libro>
+        <trim>3</trim>
+          <libro>NO_INFO</libro>
+        <trim>4</trim>
+          <libro>NO_INFO</libro>
+      </norte>
+    </regiones>
+    <regiones>
+      <centro>Centro
+        <trim>1</trim>
+          <libro>NO_INFO</libro>
+        <trim>2</trim>
+          <libro>16080</libro>
+        <trim>3</trim>
+          <libro>25000</libro>
+        <trim>4</trim>
+          <libro>29000</libro>
+      </centro>
+    </regiones>
+    <regiones>
+      <sur>Sur
+        <trim>1</trim>
+          <libro>27000</libro>
+        <trim>2</trim>
+          <libro>31400</libro>
+        <trim>3</trim>
+          <libro>40100</libro>
+        <trim>4</trim>
+          <libro>30000</libro>
+      </sur>
+    </regiones>
+    <trimestre>Trimestre</trimestre>
+    <librosVendidos>Libros vendidos</librosVendidos>
+  </tabla>
+</ediciones_aranda>

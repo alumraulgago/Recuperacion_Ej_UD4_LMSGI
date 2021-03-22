@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UFT-8"?>
+<Gestoria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="gestoria.xsd">
+    <Clientes>
+        <DatosSede> 
+            <direccionSede>Avenida de la Coronación</direccionSede>
+            <codigoSede>G4589842</codigoSede>
+            <empleado>Antonio de la Rosa Dominguez</empleado>
+            <fecha>04/06/2019</fecha>
+            <descripcion>Insolvente</descripcion>
+        </DatosSede>
+        <Datoscliente>
+            <codigoCliente>RTU-498</codigoCliente>
+            <numeroViviendas>1</numeroViviendas>
+            <coste>1200000</coste>
+            <observaciones>Mansión en la zona rica de Madrid</observaciones>
+            <plazoAlta>08/02/2021</plazoAlta>
+        </Datoscliente>    
+    </Clientes>
+    <Clientes>
+        <DatosSede> 
+            <direccionSede>Avenida de la Coronación</direccionSede>
+            <codigoSede>G4589842</codigoSede>
+            <empleado>Antonio de la Rosa Dominguez</empleado>
+            <fecha>18/10/2019</fecha>
+            <descripcion>Solvente</descripcion>
+        </DatosSede>
+        <Datoscliente>
+            <codigoCliente>AEV-724</codigoCliente>
+            <numeroViviendas>6</numeroViviendas>
+            <coste>600000</coste>
+            <observaciones>Bloque de apartamentos en el paseo marítimo</observaciones>
+            <plazoAlta>20/06/2020</plazoAlta>
+        </Datoscliente>    
+    </Clientes>
+</Gestoria>

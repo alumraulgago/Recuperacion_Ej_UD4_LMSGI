@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Gestoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clientes" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DatosSede">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="direccionSede"/>
+                    <xs:element type="xs:string" name="codigoSede"/>
+                      <xs:length value="8"/>
+                      <xs:pattern value="[A-Z],\d,\d,\d,\d,\d,\d,\d"/>
+                    <xs:element type="xs:string" name="empleado"/>
+                    <xs:element type="xs:string" name="date"/>
+                    <xs:element type="xs:string" name="descripcion"/>
+                      <xs:enumeration value="Solvente"/>
+                      <xs:enumeration value="Insolvente"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Datoscliente">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="codigoCliente"/>
+                      <xs:pattern value="[A-Z],[A-Z], [A-Z], [-], \d , \d, \d"/>
+                    <xs:element type="xs:byte" name="numeroViviendas"/>
+                    <xs:element type="xs:int" name="coste"/>
+                    <xs:element type="xs:string" name="observaciones"/>
+                    <xs:element type="xs:string" name="plazoAlta"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
